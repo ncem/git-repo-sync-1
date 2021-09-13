@@ -9,6 +9,6 @@ case "${GITHUB_EVENT_NAME}" in
         git push -d target ${GITHUB_EVENT_REF}
         ;;
     *)
-        break
+        echo "GITHUB_EVENT_NAME=${GITHUB_EVENT_NAME} GITHUB_EVENT_REF=${GITHUB_EVENT_REF}"
         ;;
 esac
